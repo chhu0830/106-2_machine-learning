@@ -1,4 +1,4 @@
-# 106-2_machine-learning
+# NCTU\_106-2\_machine-learning
 Assignments for machine-learning in NCTU
 
 ## lab1 - rLSE & Newton's method
