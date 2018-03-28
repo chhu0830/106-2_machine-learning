@@ -4,11 +4,11 @@ import preprocess
 import sys
 from classifier import Naive
 
-training_images_file = (len(sys.argv) >= 2 and sys.argv[1]) or "data/train-images-idx3-ubyte"
-training_labels_file = (len(sys.argv) >= 3 and sys.argv[2]) or "data/train-labels-idx1-ubyte"
-testing_images_file  = (len(sys.argv) >= 4 and sys.argv[3]) or "data/t10k-images-idx3-ubyte"
-testing_labels_file  = (len(sys.argv) >= 5 and sys.argv[4]) or "data/t10k-labels-idx1-ubyte"
-option = (len(sys.argv) >= 6 and sys.argv[5]) or 0
+option = (len(sys.argv) >= 2 and sys.argv[1]) or 0
+training_images_file = (len(sys.argv) >= 3 and sys.argv[2]) or "data/train-images-idx3-ubyte"
+training_labels_file = (len(sys.argv) >= 4 and sys.argv[3]) or "data/train-labels-idx1-ubyte"
+testing_images_file  = (len(sys.argv) >= 5 and sys.argv[4]) or "data/t10k-images-idx3-ubyte"
+testing_labels_file  = (len(sys.argv) >= 6 and sys.argv[5]) or "data/t10k-labels-idx1-ubyte"
 
 n, r, c, training_images = preprocess.images(training_images_file)
 n, training_labels = preprocess.labels(training_labels_file)
