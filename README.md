@@ -5,10 +5,27 @@ Assignments for machine-learning in NCTU
 - Usage: cd lab1 && python3 main.py &lt;data file&gt; &lt;bases number&gt; &lt;lambda&gt;
 
 ## Lab2 - Naive Bayes & Beta-Binomial Online Learning
-- Usage: cd lab2 && python3 main.py \[option \[training images \[training labels \[testing images \[testing labels\]\]\]\]\]
-- Usage: cd lab2 && python3 binomial.py \[data \[a \[b\]\]\]
 ### Naive Bayes
-- Discrete - 256 in 32 bins
-- Continuous - Standard Normal Distribution
+- Usage: cd lab2 && python3 main.py \[option \[training images \[training labels \[testing images \[testing labels\]\]\]\]\]
+  - option 0: Discrete - 256 in 32 bins
+  - option 1: Continuous - Standard Normal Distribution
+
 ### Binomial
+- Usage: cd lab2 && python3 binomial.py \[data \[a \[b\]\]\]
 - Online learning with Beta Distribution as prior
+
+## Lab3 - Data Generator & Online Learning
+### Data Generator
+- Usage: cd lab3 && python3 generator.py &lt;mode&gt; &lt;mean var | a w&gt;
+  - mode 0: Gaussian Distribution data generator y~N(mean, var)
+  - mode 1: Polynomial Basis Linear Model data generator y = Phi(x)\*w + e, e~N(0, a), -10&lt;x&lt;10
+  - mode 2: Plot for mode 0 with 10000 data
+  - mode 3: Plot for mode 1 with 10000 data
+
+### Gaussian Estimator
+- Usage: cd lab3 && python3 estimator.py &lt;number of data&gt; &lt;mean&gt; &lt;var&gt;
+
+### Baysian Linear Regression
+- Usage: cd lab3 && python baysian.py &lt;number of data&gt; &lt;precision&gt; &lt;a&gt; &lt;w&gt;
+  - a and w is for polynomial basis linear model data generator
+- Assume we have known the data variance
