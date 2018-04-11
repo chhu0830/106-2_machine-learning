@@ -16,7 +16,7 @@ I = Matrix(n)
 
 s0 = I * b
 m0 = Matrix([[0 for i in range(n)]]).transpose()
-for t in range(N):
+for _ in range(N):
     x, y = linear.gen()
     X = Matrix([[x**i for i in range(n)]])
 
