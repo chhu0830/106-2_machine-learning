@@ -26,6 +26,6 @@ Assignments for machine-learning in NCTU
 - Usage: cd lab3 && python3 estimator.py &lt;number of data&gt; &lt;mean&gt; &lt;var&gt;
 
 ### Baysian Linear Regression
-- Usage: cd lab3 && python baysian.py &lt;number of data&gt; &lt;precision&gt; &lt;a&gt; &lt;w&gt;
+- Usage: cd lab3 && python baysian.py &lt;precision&gt; &lt;a&gt; &lt;w&gt;
   - a and w is for polynomial basis linear model data generator
 - Assume we have known the data variance
