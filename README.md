@@ -29,3 +29,12 @@ Assignments for machine-learning in NCTU
 - Usage: cd lab3 && python bayesian.py &lt;precision&gt; &lt;a&gt; &lt;w&gt;
   - a and w is for polynomial basis linear model data generator
 - Assume we have known the data variance
+
+## Lab4 - Logistic Regression & EM clustering
+### Logistic Regression
+- Usage: cd lab4 && python3 logistic.py &lt;n&gt; &lt;mx1&gt; &lt;vx1&gt; &lt;my1&gt; &lt;vy1&gt; &lt;mx2&gt; &lt;vx2&gt; &lt;my2&gt; &lt;vy2&gt;
+- Distinguish two normal-distribution data set
+
+### EM clustering
+- Usage: cd lab4 && python3 em.py
+- Cluster MNIST
