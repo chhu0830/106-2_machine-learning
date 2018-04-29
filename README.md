@@ -30,8 +30,8 @@ Assignments for machine-learning in NCTU
   - a and w is for polynomial basis linear model data generator
 - Assume we have known the data variance
 
-## Lab4 - Logistic Regression & EM clustering
-### Logistic Regression
+## Lab4 - Logistic Classifier & EM clustering
+### Logistic Classifier
 - Usage: cd lab4 && python3 logistic.py &lt;n&gt; &lt;mx1&gt; &lt;vx1&gt; &lt;my1&gt; &lt;vy1&gt; &lt;mx2&gt; &lt;vx2&gt; &lt;my2&gt; &lt;vy2&gt;
 - Distinguish two normal-distribution data set
 
