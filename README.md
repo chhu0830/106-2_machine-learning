@@ -38,3 +38,10 @@ Assignments for machine-learning in NCTU
 ### EM clustering
 - Usage: cd lab4 && python3 em.py
 - Cluster MNIST
+
+## Lab5 - Kmean/Kernel Kmean & LIBSVM
+### Kmean/Kernel Kmean
+- Usage: use kmean/dot\_table.py to generate dot\_tables for two datasets, then use `python3 kmean/kmean.py <dataset> <cluster number> <kernel> [gamma]`
+  - dataset: circle | moon
+  - cluster num: 0-4
+  - kernel: linear | rbf
