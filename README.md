@@ -45,3 +45,8 @@ Assignments for machine-learning in NCTU
   - dataset: circle | moon
   - cluster num: 0-4
   - kernel: linear | rbf
+
+### LIBSVM
+- Usage: `python3 svm/mnist.py`
+- svm/precompute-kernel.py and svm/libsvm-format.py are used to format the data
+- [LIBSVM source](https://www.csie.ntu.edu.tw/~cjlin/libsvm/)
