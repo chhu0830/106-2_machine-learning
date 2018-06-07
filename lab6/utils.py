@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import random
 import os.path
 
-def pca(data, label, filename=None, color=['r', 'g', 'b', 'c', 'y'], special=None):
+def pca(data, labels, filename=None, color=['r', 'g', 'b', 'c', 'y'], special=None):
     ''' get the covariance of data and get the eigenvectors of the covariance matrix '''
     cov = np.cov(np.array(data).T)
     w, v = LA.eig(cov)
@@ -20,14 +20,14 @@ def pca(data, label, filename=None, color=['r', 'g', 'b', 'c', 'y'], special=Non
     for i, X in enumerate(data):
         x = np.dot(v[:,0], X)
         y = np.dot(v[:,1], X)
-        plt.scatter(x, y, c=color[label[i]], s=5)
+        plt.scatter(x, y, c=color[labels[i]], s=5)
 
     ''' mark the special data points with black triangle sign (for support vectors) '''
     if special:
         for s in special:
-            x = np.dot(v[:,0], s)
-            y = np.dot(v[:,1], s)
-            plt.scatter(x, y, c="black", s=5, marker='v')
+            x = np.dot(v[:,0], data[s])
+            y = np.dot(v[:,1], data[s])
+            plt.scatter(x, y, c=color[labels[s]], s=20, marker='x')
 
     ''' save the figure and show it '''
     if filename:

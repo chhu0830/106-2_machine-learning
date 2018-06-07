@@ -35,7 +35,8 @@ model = svm_train(prob_pre, param_pre)
 
 ''' get support vectors '''
 n = model.get_sv_indices()
+n = [i-1 for i in n]
 
 ''' draw support vectors and dots in 2D space with PCA '''
 images, labels = preprocess(path='../../../lab5/data/')
-pca(images, labels, '../../results/svm-linearbf.png', special=[image for i, image in enumerate(images) if i in n])
+pca(images, labels, special=n)
