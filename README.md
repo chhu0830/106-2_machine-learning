@@ -50,3 +50,9 @@ Assignments for machine-learning in NCTU
 - Usage: `python3 svm/mnist.py`
 - svm/precompute-kernel.py and svm/libsvm-format.py are used to format the data
 - [LIBSVM source](https://www.csie.ntu.edu.tw/~cjlin/libsvm/)
+- put mnist.py under libsvm/python/
+
+## Lab6 - PCA/LDA & RatioCut/NormalizeCut & Show support vectors
+- Project MNIST data in 2D space
+- Cluster MNIST with RatioCut and NormalizeCut
+- Show support vectors of SVM with different kernels in 2D space
